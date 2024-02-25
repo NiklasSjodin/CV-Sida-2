@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEADER SECTION -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark-theme.css">
+    <link rel="stylesheet" href="mediaqueris.css" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c764c399e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAV SECTION -->
+    <nav id="desktop-nav">
+      <div class="logo">NS Code</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button id="dark-mode-toggle" class="btn btn-color-2"></button>
+        </ul>
+      </div>
+    </nav>
+    <!-- HAMBURGER SECTION -->
+    <nav id="hamburger-nav">
+      <div class="logo">NS Code</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="images/IMG_5907.JPG" alt="Niklas Sjödin profile picture" class="profile_pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text_p1">Hello, I'm</p>
+        <h1 class="title">Niklas Sjödin</h1>
+        <p class="section__text_p2">Fullstack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./images/my-cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+          id="linkedin-icon"
+            src="./images/linkedinlogo.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/niklas-sj%C3%B6din-626438b9/', '_blank')"
+          />
+          <img
+          id="github-icon"
+            src="./images/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/NiklasSjodin/', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <p class="section__text_p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./images/me.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./images/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Coop - Current.<br />Martin & Servera</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./images/education2.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Chas Academy - Current.<br />Tumba Gymnasium.</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a Chas Academy student on the road to becoming a Fullstack .NET Developer, set to graduate in 2025. Enthusiastic about mastering coding intricacies, tackling complex challenges, and embracing the dynamic world of technology. Committed to continuous learning and passionate about crafting innovative solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!-- EXCPERIENCE SECTION -->
+    <section id="experience">
+      <p class="section__text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Learning</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <p class="section__text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/Netify2.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Netify</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/HjalmarStranninge/Netify', '_blank')"
+              >
+                Github
+              </button>
+              <a href="#myModal" class="btn btn-color-2 project-btn">More Info</a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/BankNet3.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">BankNET</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/HjalmarStranninge/BankNET', '_blank')"
+              >
+                Github
+              </button>
+              <button
+              id="openModalBtnBankNET"
+                class="btn btn-color-2 project-btn"
+                onclick="openModal('myModalBankNET')"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/Api3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">API</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/NiklasSjodin/Miniprojekt-API', '_blank')"
+              >
+                Github
+              </button>
+              <button
+              id="openModalBtnAPI"
+                class="btn btn-color-2 project-btn"
+                onclick="openModal('myModalAPI')"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <p class="section__text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./images/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Sjoodiin@hotmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./images/linkedinlogo.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/niklas-sj%C3%B6din-626438b9/", target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Niklas Sjödin. All Rights Reserved.</p>
+    </footer>
+    <!-- MODALS SECTION -->
+    <!-- Modal for Netify -->
+<!-- <div id="myModalNetify" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModalBtnNetify" onclick="closeModal('myModalNetify')">&times;</span>
+    <h2>Netify</h2>
+    <p>A console application that uses the Spotify API to retrieve all the artist, tracks, popularity of each artist, and the danceability of each track. A group project made by me and three other students.</p>
+  </div>
+</div>
+ -->
+<!-- Modal for BankNET -->
+<div id="myModalBankNET" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModalBtnBankNET" onclick="closeModal('myModalBankNET')">&times;</span>
+    <h2>BankNET</h2>
+    <p>A console application that work just like a bank. Insert money,
+                withdraw money, check the balance of each account, open new
+                account, send money between your accounts and others bank
+                accounts. Made by me and three other students.</p>
+  </div>
+</div>
+<!-- Modal for API -->
+<div id="myModalAPI" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModalBtnAPI" onclick="closeModal('myModalAPI')">&times;</span>
+    <h2>API</h2>
+    <p>This project aims to develop a system for storing individuals'
+                essential details like names and phone numbers. It supports the
+                storage of multiple interests per person, each having a title
+                and brief description. Individuals can be connected to various
+                interests, and multiple website links can be associated with
+                both individuals and their interests.</p>
+  </div>
+</div>
+<!-- Modal for Netify (without JS) -->
+<div id="myModal" class="modal">
+        <div class="modal-content">
+            <a href="#projects" class="close">&times;</a>
+            <h2>Netify (modal utan JavaScript)</h2>
+            <p>A console application that uses the Spotify API to retrieve all the artist, tracks, popularity of each artist, and the danceability of each track. A group project made by me and three other students.</p>
+        </div>
+    </div>
+
+<div class="container">
+  <div class="ring"></div>
+  <div class="ring"></div>
+  <div class="ring"></div>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

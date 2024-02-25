@@ -1,0 +1,52 @@
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode nav ul.nav-links li a {
+    color: white;
+}
+
+body.dark-mode p {
+    color: rgb(170, 170, 170);
+}
+
+.dark-mode #dark-mode-toggle::before {
+    content: "\f5ca";
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 0.5em;
+}
+
+.btn-color-2.dark-mode {
+    color: white;
+}
+
+.dark-mode .details-container h3 {
+    color: black !important;
+}
+
+.dark-mode .icon {
+    display: none;
+}
+
+.dark-mode #linkedin-icon {
+    display: block;
+    content: url('./images/linkedindark.png');
+}
+
+.dark-mode #github-icon {
+    display: block;
+    content: url('./images/githubdark.png');
+}
+
+body.dark-mode .email-icon {
+    filter: invert(100%);
+}
+
+body.dark-mode .icon {
+    display: inline-block !important;
+}
+
+body.dark-mode .email-icon {
+    filter: invert(0%) !important;
+}
